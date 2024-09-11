@@ -1,9 +1,9 @@
 import { BaseApi } from '@lib/apis/base.api';
-import { UserService } from '@lib/apis/user.api';
+import { UserApi } from '@lib/apis/user.api';
 
-export const LogicUser = (baseApi: BaseApi) => {
+export const UserLogic = (baseApi: BaseApi) => {
 
-  const { getUser } = UserService(baseApi);
+  const { getUser } = UserApi(baseApi);
 
   const handleGetUser = async () => {
     try {
